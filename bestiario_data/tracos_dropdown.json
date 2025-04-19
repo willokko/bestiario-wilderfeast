@@ -1,0 +1,169 @@
+{
+  "tracos": [
+    {
+      "id": "armadura-natural",
+      "nome": "Armadura Natural",
+      "descricao": "Passivo. Você sofre apenas metade do dano de ataques PODEROSOS (GOLPES e TIROS).",
+      "expanded": false,
+      "tipo": "Passivo",
+      "resumo": "Passivo"
+    },
+    {
+      "id": "incansavel",
+      "nome": "Incansável",
+      "descricao": "Custo: 1 Sucesso PODEROSO. Encerre [A] níveis da condição Fadigado e recupere [A] de Resistência.",
+      "expanded": false,
+      "tipo": "Ativo",
+      "resumo": "Custo: 1 Sucesso PODEROSO"
+    },
+    {
+      "id": "sentidos-agucados",
+      "nome": "Sentidos Aguçados",
+      "descricao": "Passiva. Se for o guia, você tem vantagem na sua primeira rolagem durante um Evento. Seus Sentidos Aguçados se manifestam como a visão de uma águia, permitindo localizar o perigo ao longe.",
+      "expanded": false,
+      "tipo": "Passivo",
+      "resumo": "Passiva"
+    },
+    {
+      "id": "nao-me-toque",
+      "nome": "NÃO-ME-TOQUE",
+      "descricao": "(Passiva) Se uma criatura AGARRAR ou GOLPEAR você, cause 2 de Dano a ela.",
+      "expanded": false,
+      "tipo": "Passivo",
+      "resumo": "(Passiva) Se uma criatura AGARRAR ou GOLPEAR você, cause 2 de Dano a ela."
+    },
+    {
+      "id": "velocidade",
+      "nome": "Velocidade",
+      "descricao": "Custo: 1 Sucesso LIGEIRO. Você pode se mover sem gastar Ações.",
+      "expanded": false,
+      "tipo": "Ativo",
+      "resumo": "Custo: 1 Sucesso LIGEIRO"
+    },
+    {
+      "id": "ladrao",
+      "nome": "Ladrão",
+      "descricao": "Custo: 1 Sucesso CAPCIOSO. Pegue um Ingrediente, Lanche ou uma criatura capturada de outra criatura a até 1 Pernada de distância. Você escolhe se a criatura capturada permanece presa ou é libertada.",
+      "expanded": false,
+      "tipo": "Ativo",
+      "resumo": "Custo: 1 Sucesso CAPCIOSO"
+    },
+    {
+      "id": "fotossintese",
+      "nome": "FOTOSSÍNTESE",
+      "descricao": "(Custo: 3 Ações) Se você estiver sob o céu aberto, restaure sua Resistência ao máximo.",
+      "expanded": false,
+      "tipo": "Ativo",
+      "resumo": "(Custo: 3 Ações) Se você estiver sob o céu aberto, restaure sua Resistência ao máximo"
+    },
+    {
+      "id": "corpo-incandescente",
+      "nome": "Corpo Incandescente",
+      "descricao": "Passivo. No início de cada rodada, toda criatura de sua escolha a até 1 Pernada de você sofre 2 de dano. Além disso, se você estiver capturado por uma Parte, essa Parte se torna Queimada. Suas Partes não podem ficar Queimadas.",
+      "expanded": false,
+      "tipo": "Passivo",
+      "resumo": "Passivo"
+    },
+    {
+      "id": "folego-de-fogo",
+      "nome": "Folego de Fogo",
+      "descricao": "Custo: 2 Ações. Faça um teste de TIRO PODEROSO contra uma criatura a até 2 Pernadas. Se for bem-sucedido, cause [A] de dano na Parte alvo e deixe-a Queimada.",
+      "expanded": false,
+      "tipo": "Ativo",
+      "resumo": "Custo: 2 Ações"
+    },
+    {
+      "id": "predador-emboscador",
+      "nome": "Predador Emboscador",
+      "descricao": "Passivo. Se você atacar enquanto está Escondido, causa dano dobrado.",
+      "expanded": false,
+      "tipo": "Passivo",
+      "resumo": "Passivo"
+    },
+    {
+      "id": "camuflagem",
+      "nome": "Camuflagem",
+      "descricao": "Custo: 1 Sucesso CAPCIOSO. Você fica Escondido.",
+      "expanded": false,
+      "tipo": "Ativo",
+      "resumo": "Custo: 1 Sucesso CAPCIOSO"
+    },
+    {
+      "id": "explosao",
+      "nome": "Explosão",
+      "descricao": "Custo: 2 Ações. Faça um teste de EXIBIÇÃO LIGEIRA. Se for bem-sucedido, escolha uma criatura. Ela se torna Atordoada e Confusa por [A].",
+      "expanded": false,
+      "tipo": "Ativo",
+      "resumo": "Custo: 2 Ações"
+    },
+    {
+      "id": "guardiao-do-rebanho",
+      "nome": "Guardião do Rebanho",
+      "descricao": "Passivo. Você ganha Vantagem ao usar GOLPE contra criaturas que tenham atacado aliados no último turno.",
+      "expanded": false,
+      "tipo": "Passivo",
+      "resumo": "Passivo"
+    },
+    {
+      "id": "cheiro-de-sangue",
+      "nome": "Cheiro de Sangue",
+      "descricao": "Passivo. Você ganha Vantagem em todos os Testes durante o primeiro turno da caçada se o outro lado tiver uma criatura Ferida.",
+      "expanded": false,
+      "tipo": "Passivo",
+      "resumo": "Passivo"
+    },
+    {
+      "id": "escavacao",
+      "nome": "Escavação",
+      "descricao": "Você pode cavar. Além disso, se se mover cavando, pode percorrer até 2 Pernadas em vez de 1.",
+      "expanded": false,
+      "tipo": "Especial",
+      "resumo": "Você pode cavar"
+    },
+    {
+      "id": "colmeia-errante",
+      "nome": "Colmeia Errante",
+      "descricao": "Você abriga colônias inteiras de fungos e insetos dentro de seu corpo, o que lhe permite se recuperar rapidamente de ferimentos leves. No início de cada turno, restaure 1 de Resistência.",
+      "expanded": false,
+      "tipo": "Especial",
+      "resumo": "Você abriga colônias inteiras de fungos e insetos dentro de seu corpo, o que lhe permite se recuperar rapidamente de ferimentos leves"
+    },
+    {
+      "id": "esporos-ilusórios",
+      "nome": "ESPOROS ILUSÓRIOS",
+      "descricao": "(Custo: 1 Sucesso CAPCIOSO) Você libera uma névoa de esporos que confunde inimigos próximos. Escolha uma criatura a até 1 Pernada; ela sofre a condição Confusa.",
+      "expanded": false,
+      "tipo": "Ativo",
+      "resumo": "(Custo: 1 Sucesso CAPCIOSO) Você libera uma névoa de esporos que confunde inimigos próximos"
+    }
+  ],
+  "categorias": {
+    "combate": [
+      "armadura-natural",
+      "incansavel",
+      "nao-me-toque",
+      "velocidade",
+      "corpo-incandescente",
+      "folego-de-fogo",
+      "predador-emboscador",
+      "guardiao-do-rebanho"
+    ],
+    "movimento": [
+      "ladrao",
+      "escavacao",
+      "esporos-ilusórios"
+    ],
+    "defesa": [
+      "fotossintese",
+      "colmeia-errante"
+    ],
+    "utilidade": [
+      "sentidos-agucados",
+      "camuflagem"
+    ],
+    "outros": [
+      "explosao",
+      "cheiro-de-sangue"
+    ]
+  }
+}

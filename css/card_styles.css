@@ -1,0 +1,146 @@
+/* Estilos para cards de estilos e habilidades em grid 4xn com largura mínima */
+
+/* Grid layout para estilos e habilidades - exatamente 4 colunas */
+.styles-container, .abilities-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 992px) {
+  .styles-container, .abilities-container {
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .styles-container, .abilities-container {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .styles-container, .abilities-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+/* Estilo dos cards */
+.monster-style-card, .monster-ability-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  min-width: 150px; /* Garantir largura mínima para os cards */
+}
+
+.monster-style-card {
+  cursor: pointer;
+}
+
+.monster-style-card:hover, .monster-ability-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.monster-style-card:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Conteúdo dos cards */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin: 0;
+  color: #333;
+  flex-grow: 1;
+  margin-right: 10px;
+  word-break: break-word;
+}
+
+.card-value {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #555;
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Indicador de rolagem para estilos */
+.dice-indicator {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 1.2em;
+  opacity: 0.6;
+}
+
+.monster-style-card:hover .dice-indicator {
+  opacity: 1;
+  animation: wiggle 0.5s ease;
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-10deg); }
+  50% { transform: rotate(10deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Cores diferentes para os tipos de estilos */
+.style-PODEROSO {
+  border-left: 4px solid #dc3545;
+}
+
+.style-PRECISO {
+  border-left: 4px solid #007bff;
+}
+
+.style-LIGEIRO {
+  border-left: 4px solid #28a745;
+}
+
+.style-CAPCIOSO {
+  border-left: 4px solid #6f42c1;
+}
+
+.style-SAGAZ {
+  border-left: 4px solid #fd7e14;
+}
+
+.style-RESISTENTE {
+  border-left: 4px solid #6c757d;
+}
+
+/* Cores para habilidades */
+.monster-ability-card {
+  border-left: 4px solid #17a2b8;
+}

@@ -1,0 +1,222 @@
+/* Estilos para o sistema de combate */
+
+/* Botão de combate */
+.combat-button {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 15px;
+    margin-left: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .combat-button.active {
+    background-color: #dc3545;
+  }
+  
+  .combat-button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Painel de combate */
+  .combat-panel {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none; /* Inicialmente oculto */
+  }
+  
+  .combat-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Seção de vida */
+  .health-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .health-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .health-header h3 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .health-inputs {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .health-input-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .health-input-group label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .health-input-group input {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .health-input-group input:disabled {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+  }
+  
+  .health-bar-container {
+    height: 20px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .health-bar {
+    height: 100%;
+    background-color: #28a745;
+    border-radius: 10px;
+    transition: width 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .health-bar.warning {
+    background-color: #ffc107;
+  }
+  
+  .health-bar.critical {
+    background-color: #dc3545;
+  }
+  
+  /* Seção de ferido */
+  .wounded-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .wounded-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .wounded-header h3 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .wounded-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .wounded-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: #6c757d;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #wounded-count {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #dc3545;
+    min-width: 30px;
+    text-align: center;
+  }
+  
+  .wounded-max-info {
+    font-size: 0.9em;
+    color: #6c757d;
+    font-style: italic;
+  }
+  
+  /* Calculador de dano */
+  .damage-calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .damage-calculator h3 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .damage-input-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  #damage-input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  #apply-damage {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  #apply-damage:hover {
+    background-color: #c82333;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .health-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .wounded-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    
+    .damage-input-group {
+      flex-direction: column;
+    }
+    
+    #apply-damage {
+      align-self: flex-start;
+    }
+  }
+  

@@ -1,0 +1,72 @@
+/* Estilos responsivos */
+@media (max-width: 1200px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .search-container {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    #search-input {
+        width: 70%;
+    }
+    
+    #search-button {
+        width: 30%;
+    }
+}
+
+@media (max-width: 992px) {
+    .details-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .monster-image-container {
+        height: 250px;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .monsters-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    .card-image {
+        height: 150px;
+    }
+    
+    #monster-name {
+        font-size: 1.5rem;
+    }
+    
+    .info-section h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .monsters-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .card-image {
+        height: 200px;
+    }
+    
+    .details-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .back-button {
+        margin-bottom: 1rem;
+    }
+    
+    .part-item, .trait-item, .attack-item {
+        padding: 0.8rem;
+    }
+}

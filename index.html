@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestiário WilderFeast</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/enhancements.css">
+    <link rel="stylesheet" href="css/card_styles.css">
+    <link rel="stylesheet" href="css/combat_styles.css">
+    <link rel="icon" type="image/svg+xml" href="img/dice-solid.svg">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Bestiário WilderFeast</h1>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Buscar monstro...">
+                <button id="search-button">Buscar</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="monster-details" class="monster-details hidden">
+            <div class="details-header">
+                <button id="back-button" class="back-button">← Voltar</button>
+                <h2 id="monster-name">Nome do Monstro</h2>
+            </div>
+            
+            <div class="details-content">
+                <div class="monster-image-container">
+                    <img id="monster-image" src="img/placeholder.png" alt="Imagem do monstro">
+                </div>
+                
+                <div class="monster-info">
+                    <div class="info-section">
+                        <h3>Informações Gerais</h3>
+                        <p><strong>Linhagem:</strong> <span id="monster-lineage">Linhagem</span></p>
+                        <p><strong>Tamanho:</strong> <span id="monster-size">Tamanho</span></p>
+                        <p><strong>Habitat:</strong> <span id="monster-habitat">Habitat</span></p>
+                    </div>
+                    
+                    <div class="info-section">
+                        <h3>Estilos</h3>
+                        <div id="monster-styles" class="styles-container">
+                            <!-- Estilos do monstro serão inseridos aqui via JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <h3>Habilidades</h3>
+                        <div id="monster-abilities" class="abilities-container">
+                            <!-- Habilidades do monstro serão inseridas aqui via JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="info-section">
+                        <h3>Partes</h3>
+                        <div id="monster-parts" class="parts-container">
+                            <!-- Partes do monstro serão inseridas aqui via JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="info-section">
+                        <h3>Traços</h3>
+                        <div id="monster-traits" class="traits-container">
+                            <!-- Traços do monstro serão inseridos aqui via JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="info-section">
+                        <h3>Ataques</h3>
+                        <div id="monster-attacks" class="attacks-container">
+                            <!-- Ataques do monstro serão inseridos aqui via JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <h3>Descrição</h3>
+                        <p id="monster-description">Descrição do monstro...</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="monsters-grid" class="monsters-grid">
+            <!-- Cards de monstros serão inseridos aqui via JavaScript -->
+            <div class="loading">Carregando bestiário...</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Bestiário WilderFeast - Baseado no manual WilderFeast Corebook</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/utils.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/dropdown_tracos.js"></script>
+    <script src="js/visualizacao_detalhada.js"></script>
+    <script src="js/bestiario.js"></script>
+    <script src="js/tracos.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/testes.js"></script>
+    <script src="js/dice_roaler_toaster.js"></script>
+    <script src="js/roll_dice.js"></script>
+    <script src="js/combat_system.js"></script>
+    <script src="js/alphabetical_sorting.js"></script>
+</body>
+</html>

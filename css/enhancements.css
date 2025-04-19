@@ -1,0 +1,64 @@
+/* Placeholder para imagens */
+.placeholder-image {
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Ícones para tipos de traços */
+.trait-type-icon {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Melhorias visuais para dropdowns */
+.trait-header {
+    transition: background-color 0.2s;
+}
+
+.trait-header:hover {
+    background-color: #f0f0f0;
+}
+
+.trait-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.trait-content.expanded {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
+
+/* Animações para cards */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.monster-card {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Melhorias para visualização mobile */
+@media (max-width: 576px) {
+    .header-container h1 {
+        font-size: 1.5rem;
+    }
+    
+    .search-container {
+        flex-direction: column;
+    }
+    
+    #search-input, #search-button {
+        width: 100%;
+        border-radius: 4px;
+        margin-bottom: 0.5rem;
+    }
+}
